@@ -1,3 +1,4 @@
+
 package com.example.furniturestore;
 
 import org.springframework.boot.SpringApplication;
