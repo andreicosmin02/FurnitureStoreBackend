@@ -8,7 +8,7 @@ import lombok.Setter;
 @Data
 @Builder
 public class UserResource {
-    private String id;
+    private Long id;
     private String username;
     private String password;
 

@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: FurnitureStore
+  datasource:
+    url: jdbc:postgresql://${POSTGRES_HOST:localhost}:5432/furniture-store
+    username: user
+    password: 123
+    driver-class-name: org.postgresql.Driver
+  hikari:
+    auto-commit: false
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    properties:
+      show_sql: true
+      hibernate:
+        jdbc:
+          lob.non_contextual_creation: true
